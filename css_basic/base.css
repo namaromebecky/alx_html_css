@@ -1,0 +1,46 @@
+/* base.css: reset + simple base styling */
+
+:root {
+  --bg: #f7f8fa;
+  --text: #222;
+  --muted: #6b7280;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header, footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.tweet {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+}
+.tweet:last-child {
+  border-bottom: none;
+}
+.meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
