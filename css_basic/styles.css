@@ -43,7 +43,21 @@ header, footer {
   flex: 0 0 auto; /* header/footer keep natural height */
 }
 
-/* Optional small-screen tweak: stack article/aside vertically */
+/* === Responsive behavior === */
+
+/* If the BODY has class "works_on_smartphone", force the main area to stack */
+body.works_on_smartphone main {
+  flex-direction: column;
+}
+
+/* When body has the class, make article and aside full width and not flexed */
+body.works_on_smartphone article,
+body.works_on_smartphone aside {
+  flex: none;
+  width: 100%;
+}
+
+/* Also keep the usual media-query fallback: on small screens stack */
 @media (max-width: 640px) {
   main {
     flex-direction: column;
