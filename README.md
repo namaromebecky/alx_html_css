@@ -14,3 +14,27 @@ The goal is to replicate the provided Figma design using semantic HTML and moder
 ---
 
 ## 📂 Project Structure
+
+---
+
+## 🛠️ Tools
+- **HTML5 & CSS3**  
+- **Figma** (design reference)  
+- **FontAwesome** (icons)  
+
+---
+
+## 📸 Design Reference
+The full design is available on [Figma](https://www.figma.com/).  
+Duplicate it to your drafts for detailed specs.
+
+---
+
+## ✅ How to Run
+1. Clone this repo:  
+   ```bash
+   git clone https://github.com/namaromebecky/alx_html_css.git
+
+
+---
+
