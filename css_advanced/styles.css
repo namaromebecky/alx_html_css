@@ -234,3 +234,47 @@
 }
 /* ================================
    End Free Membership Section
+
+  /* FAQ Section */
+.faq-section {
+  width: 100%;
+  max-width: 920px;
+  margin: 100px auto; /* centers the section */
+  text-align: center;
+  color: #071629;
+}
+
+.faq-section h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 60px;
+}
+
+/* Grid for Questions */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 80px; /* vertical and horizontal spacing */
+  text-align: left;
+}
+
+/* Each Question Block */
+.faq-item h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  color: #071629;
+}
+
+.faq-item p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(7, 22, 41, 0.5);
+}
+ 
