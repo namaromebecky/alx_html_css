@@ -3,43 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
-  <link href="base.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <title>Smile School</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="works_on_smartphone">
+<body>
+  <!-- Header -->
   <header>
-    <nav>
-      <ul>
-        <li class="logo">&#127968;</li> <!-- 🏡 logo -->
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tweets.html">Tweets</a></li>
+    <nav class="navbar">
+      <img src="images/logo.png" alt="Smile School Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="#">COURSES</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">LOGIN</a></li>
       </ul>
     </nav>
-    <h1>Welcome to My Page</h1>
-    <p class="sub">Learning Flexbox with style</p>
   </header>
 
-  <main>
-    <article>
-      <h2>My Learning Journey</h2>
-      <p>I’m building a clean responsive website using only HTML, CSS, and a touch of JavaScript.</p>
-      <p>This section will be my main content area. Here, I can add blog posts, articles, or notes.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat lacus vel purus ultricies, sit amet facilisis sapien interdum.</p>
-    </article>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Get Schooled</h1>
+      <p>SMILES &nbsp; GRIN &nbsp; LAUGH</p>
+      <button class="cta-button">REGISTER FOR FREE</button>
 
-    <aside>
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Project GitHub</a></li>
-        <li><a href="#">W3C Validator</a></li>
-        <li><a href="#">Flexbox Guide</a></li>
-      </ul>
-    </aside>
-  </main>
+      <h2 class="pros-title">Learn from the pros</h2>
+      <div class="pros">
+        <div class="pro">
+          <img src="images/1.png" alt="Phillip Massey">
+          <h3>Phillip Massey</h3>
+          <p>« Smile of the year » 2018 - 2019</p>
+        </div>
+        <div class="pro">
+          <img src="images/2.png" alt="Nannie Lawrence">
+          <h3>Nannie Lawrence</h3>
+          <p>Best « Little smile » 2017</p>
+        </div>
+        <div class="pro">
+          <img src="images/3.png" alt="Bruce Walters">
+          <h3>Bruce Walters</h3>
+          <p>Best « Friend Smile » live performance 2019</p>
+        </div>
+        <div class="pro">
+          <img src="images/4.png" alt="Henry Hughes">
+          <h3>Henry Hughes</h3>
+          <p>« 24h smiles » winner 2016 - 2019</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Testimonial -->
+  <section class="testimonial">
+    <img src="images/5.png" alt="Testimonial Person" class="testimonial-img">
+    <div class="testimonial-text">
+      <p>« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun! »</p>
+      <h3>Person Name</h3>
+      <p><em>Weather presenter</em></p>
+    </div>
+  </section>
+
+  <!-- Tutorials Section -->
+  <section class="tutorials">
+    <h2>Most popular tutorials</h2>
+    <div class="tutorial-cards">
+      <div class="tutorial-card">
+        <img src="images/Object.png" alt="Diagonal Smile">
+        <h3>Diagonal Smile</h3>
+        <p>by Phillip Massey</p>
+        <img src="images/rating.png" alt="Rating" class="rating">
+      </div>
+      <div class="tutorial-card">
+        <img src="images/6.png" alt="Sad Smile">
+        <h3>Sad Smile</h3>
+        <p>by Phillip Massey</p>
+        <img src="images/rating.png" alt="Rating" class="rating">
+      </div>
+      <div class="tutorial-card">
+        <img src="images/7.png" alt="Natural Smile">
+        <h3>Natural Smile</h3>
+        <p>by Phillip Massey</p>
+        <img src="images/rating.png" alt="Rating" class="rating">
+      </div>
+      <div class="tutorial-card">
+        <img src="images/8.png" alt="Happy Smile">
+        <h3>Happy Smile</h3>
+        <p>by Phillip Massey</p>
+        <img src="images/rating.png" alt="Rating" class="rating">
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes Section -->
+  <section class="quotes">
+    <div class="quote-card">
+      <img src="images/9.png" alt="Smiling Woman">
+      <div class="quote-text">
+        <p>« Learning to smile has boosted my confidence in every part of my life. »</p>
+        <h3>Jane Doe</h3>
+        <p><em>Student</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 My Website | Built with ❤️ in HTML & CSS</p>
+    <img src="images/logo.png" alt="Smile School Logo" class="logo">
+    <div class="social-icons">
+      <i>FB</i>
+      <i>TW</i>
+      <i>IG</i>
+    </div>
+    <p>© SmileSchool 2025</p>
   </footer>
 </body>
 </html>
