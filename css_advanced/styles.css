@@ -151,18 +151,86 @@
 
 
 /* Membership Section */
+/* ================================
+   Free Membership Section
+================================= */
 .membership {
-  background: #071629 url("images/smile.png") repeat;
+  background: #071629;
   color: #fff;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 60px 20px;
 }
-.membership .btn {
+
+.membership-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #C271FF;
+  margin-bottom: 50px;
+}
+
+.membership-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.feature {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.feature-icon {
+  width: 45px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.membership-btn {
   background: #C271FF;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 22px;
+  padding: 12px 35px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
   cursor: pointer;
-  transition: background 0.3s;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease;
 }
+
+.membership-btn:hover {
+  background: #a854d9;
+}
+
+/* Responsive: stack features on small screens */
+@media (max-width: 900px) {
+  .membership-features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .membership-features {
+    grid-template-columns: 1fr;
+  }
+}
+/* ================================
+   End Free Membership Section
