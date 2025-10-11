@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Headphones Website
 
 This project is part of the **ALX Front-End** course.  
@@ -82,3 +83,14 @@ To view the page locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/<your-username>/alx_html_css.git
+=======
+# alx_html_css
+
+This repo contains the `css_basic` project for learning HTML and CSS.
+
+Contents:
+- css_basic/index.html
+- css_basic/tweets.html
+- css_basic/base.css
+- css_basic/styles.css
+>>>>>>> a05b06c2040773f31edc98ff05cf6bdc3a740dd4
