@@ -67,6 +67,22 @@ You should duplicate the project in Figma to your drafts to inspect elements and
 ---
 
 ## 🖋️ Fonts
+# Headphones Website
+
+This project is part of the **ALX Front-End Course**.
+
+## Description
+A simple webpage showcasing a **Headphones landing page**, built using **HTML and CSS**.  
+It includes sections such as the header, hero section, features, and footer — with images and icons sourced from the design assets.
+
+## Files Included
+- `index.html` — The main HTML file for the webpage  
+- `styles.css` — The CSS file for styling  
+- `/assets` — Folder containing images and icons  
+- `/fonts` — Folder containing custom fonts used in the project  
+
+## Author
+**Becky Namarome**
 
 - **Source Sans Pro**
 - **Spin Cycle OT**
