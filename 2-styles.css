@@ -1,0 +1,146 @@
+/* ===== GENERAL STYLES ===== */
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ===== HEADER / HERO ===== */
+.hero {
+  background: url("assets/headphones_hero.jpg") center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #ff6565;
+  padding: 12px 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+/* ===== OUR RESULTS SECTION ===== */
+.our-results {
+  position: relative;
+  background: url("assets/headphones_hero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.our-results::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    73.41% 73.41% at 0% 0%,
+    rgba(16, 25, 41, 0.47) 0%,
+    #071629 100%
+  );
+  z-index: 0;
+}
+
+.our-results .container {
+  position: relative;
+  z-index: 1;
+}
+
+.our-results h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.our-results p {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+.results-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.result-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #ff6565;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.circle h3 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.circle p {
+  font-size: 0.9rem;
+  margin: 5px 0 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}

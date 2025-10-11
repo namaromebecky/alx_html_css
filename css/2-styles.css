@@ -1,0 +1,69 @@
+/* css/2-styles.css - styles for Task 3 */
+
+/* Reset */
+* { box-sizing: border-box; margin:0; padding:0; }
+html,body{height:100%;}
+body { font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:#111; background:#fff; line-height:1.5; }
+
+/* container */
+.container { max-width:1000px; margin:0 auto; padding:0 16px; }
+
+/* Header / hero */
+.header {
+  background: url('../assets/headphones_hero.jpg') center/cover no-repeat;
+  color: #fff;
+  min-height: 72vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding: 28px 0;
+}
+.header-top {}
+
+/* top row: logo + nav */
+.header-top .container { display:flex; align-items:center; justify-content:space-between; padding-top:8px; }
+.logo img { height:44px; display:block; }
+
+/* simple nav */
+.nav { display:flex; gap:24px; }
+.nav a { color:#fff; text-decoration:none; font-weight:600; padding:6px; }
+.nav a:hover, .nav a:active { color: #FF6565; }
+
+/* hero content */
+.hero-content { text-align:center; padding: 40px 0 80px; }
+.hero-content h1 { font-size:32px; font-weight:700; margin-bottom:12px; }
+.hero-content p { font-size:16px; margin-bottom:18px; max-width:720px; margin-left:auto; margin-right:auto; color: rgba(255,255,255,0.95); }
+.btn { display:inline-block; background:#FF6565; color:#fff; padding:12px 26px; border-radius:22px; font-weight:700; text-decoration:none; box-shadow:0 4px 24px rgba(0,0,0,0.35); }
+.btn:hover, .btn:active { opacity:0.9; }
+
+/* What we do */
+.what-we-do { background:#f7f8fa; color:#071629; padding:72px 0; text-align:center; }
+.what-we-do .lead { max-width:720px; margin: 0 auto 36px; font-size:16px; color:#374151; }
+.icons-container { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:28px; align-items:start; }
+
+/* icon boxes */
+.icon-box { background:#fff; padding:28px; border-radius:12px; box-shadow:0 6px 18px rgba(10,10,10,0.06); text-align:center; }
+.hol-icon { font-size:48px; color: var(--accent, #FF6565); display:block; margin:0 auto 12px; }
+
+/* Our results */
+.our-results { background: url('../assets/headphones_hero.jpg') center/cover no-repeat; padding:80px 0; color:#fff; text-align:center; }
+.our-results h2 { font-size:28px; margin-bottom:12px; }
+.our-results p { max-width:700px; margin: 0 auto 36px; color: rgba(255,255,255,0.9); }
+
+/* circles grid */
+.results-grid { display:flex; justify-content:center; gap:40px; flex-wrap:wrap; align-items:center; }
+.circle { width:150px; height:150px; border-radius:50%; border:2px solid #FF6565; display:flex; flex-direction:column; align-items:center; justify-content:center; background: rgba(0,0,0,0.45); }
+.circle h3 { color:#FF6565; font-size:28px; margin-bottom:6px; }
+.circle p { color:#fff; font-size:14px; }
+
+/* Footer */
+.site-footer { background:#fff; color:#666; text-align:center; padding:24px 0; }
+
+/* Responsive at 480px */
+@media (max-width:480px) {
+  .nav { display:none; } /* simple fallback */
+  .hero-content h1 { font-size:22px; }
+  .icons-container { grid-template-columns: 1fr; gap:18px; }
+  .results-grid { gap:20px; }
+  .container { padding: 0 12px; }
+}
