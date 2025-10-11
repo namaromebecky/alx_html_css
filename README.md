@@ -37,7 +37,14 @@ You should duplicate the project in Figma to your drafts to inspect elements and
 
 ## 🧱 Tech Stack
 
-- **HTML5** for structure  
+- **HTML5** for stru# Headphones Project
+
+This project is part of the **ALX Front-End Web Development** course.  
+It focuses on building a responsive landing page for a fictional headphones company using **HTML** and **CSS**.
+
+## 📁 Project Structure
+
+cture  
 - **CSS3** for styling  
 - **Figma** for design reference  
 - **Local assets and fonts** for visuals
@@ -98,7 +105,7 @@ To view the page locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/alx_html_css.git
+   git clone https://github.com/namaromebecky>/alx_html_css.git
 =======
 # alx_html_css
 
