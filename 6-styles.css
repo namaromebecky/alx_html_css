@@ -1,0 +1,234 @@
+/* 6-styles.css — Task 6: draw pentagons using HTML + CSS (no images) */
+
+/* ---------- Base reset ---------- */
+:root {
+  --accent: #FF6565;
+  --maxw: 1000px;
+  --bg-dark: #071629;
+  --muted: #374151;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  color: #071629;
+  background: #fff;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ---------- Header / Hero ---------- */
+.hero {
+  position: relative;
+  min-height: 56vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(7,22,41,1) 0%, rgba(7,22,41,0.85) 100%);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('assets/headphones_hero.jpg') center/cover no-repeat;
+  filter: brightness(.55);
+  z-index: 0;
+}
+.nav {
+  position: relative;
+  z-index: 2;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 44px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: #fff;
+  font-weight: 600;
+  padding: 6px;
+}
+.nav-links a:hover {
+  color: var(--accent);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 38px 0 64px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hero-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  color: rgba(255,255,255,.92);
+  margin-bottom: 16px;
+}
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 22px;
+  font-weight: 700;
+  display: inline-block;
+  box-shadow: 0 6px 20px rgba(0,0,0,.4);
+  transition: opacity .18s;
+}
+.btn.primary:hover {
+  opacity: .9;
+}
+
+/* ---------- What we do ---------- */
+.what-we-do {
+  padding: 56px 0;
+  text-align: center;
+  background: #fff;
+}
+.lead {
+  color: var(--muted);
+  max-width: 760px;
+  margin: 0 auto 28px;
+}
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.icon-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(15,15,15,.04);
+}
+
+/* ---------- Our Results ---------- */
+.our-results {
+  padding: 72px 0;
+  text-align: center;
+  background: #071629;
+  color: #fff;
+}
+.our-results .lead {
+  color: rgba(255,255,255,.9);
+  max-width: 760px;
+  margin: 0 auto 28px;
+}
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 36px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 28px;
+}
+.result {
+  position: relative;
+  width: 220px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pentagon {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(180deg, rgba(255,101,101,0.95) 0%, rgba(255,101,101,0.8) 100%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 14px 30px rgba(7,22,41,0.45);
+  transition: transform .22s ease, filter .22s ease;
+}
+.result:hover .pentagon {
+  transform: translateX(-50%) translateY(-8px) rotate(-2deg);
+  filter: brightness(1.02);
+}
+.stat-badge {
+  position: relative;
+  z-index: 2;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-dark);
+  box-shadow: 0 8px 22px rgba(7,22,41,0.45);
+  font-weight: 700;
+}
+.stat-badge strong {
+  display: block;
+  font-size: 20px;
+  color: var(--accent);
+}
+.stat-badge small {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--bg-dark);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.site-footer p {
+  margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 22px;
+  }
+  .results-grid {
+    gap: 20px;
+  }
+  .result {
+    width: 100%;
+    height: auto;
+    padding: 36px 0;
+  }
+  .pentagon {
+    position: relative;
+    transform: none;
+    margin: 0 auto 12px;
+  }
+  .stat-badge {
+    width: 96px;
+    height: 96px;
+  }
+}
